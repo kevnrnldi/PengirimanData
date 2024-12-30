@@ -13,4 +13,5 @@ fun main() {
     var char1: Char = 'e'
     var benar: Boolean = true
     var salah: Boolean = false
+    println(benar)
 }
