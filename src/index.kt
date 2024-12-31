@@ -13,5 +13,11 @@ fun main() {
     var char1: Char = 'e'
     var benar: Boolean = true
     var salah: Boolean = false
+    fun nama(){
+        var no1:Long = 12
+        var no1n:Byte = no1.toByte()
+        var no2:Double = 123
+        println(no1n + no2)
+    }
     println(benar)
 }
