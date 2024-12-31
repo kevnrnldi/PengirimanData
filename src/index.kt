@@ -9,7 +9,6 @@ fun main() {
 
     var binary: Int = 0b10101110
     println(binary)
-
     var char1: Char = 'e'
     var benar: Boolean = true
     var salah: Boolean = false
