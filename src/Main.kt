@@ -28,7 +28,8 @@ fun main() {
     println("${nilai3} ${nilai2 + nilai1}")
 
 
-
+    var arrayKita: Array<String> = arrayOf("porsche","mclaren","Mercedes Benz")
+    println(arrayKita[1])
 }
 
 //hanya bisa digunakan diluar local function/class
