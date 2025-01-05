@@ -1,13 +1,42 @@
+
+fun helloWorld(saya: String, mobil: String, umur: Int, kota: String? = null
+, kekayaan: Int? ){
+    var halo = "halo"
+    println("$halo nama saya $saya saya memiliki mobil $mobil diumur $umur")
+}
+
 fun main(){
     val nilai = arrayOf(89,76,88,56,90,76,56,90)
     val mobilKu = arrayOf("porsche","mclaren","mercedes benz","ferrari")
 
-    var i = 0
+
+
+   helloWorld("Kevin","Porsche",22,null, null)
+
+    /*   var i = 0
+       while(true){
+           println( "hello ke $i")
+           i++
+           if(i>100){
+               break
+           }
+       }
+
+
+
+       for (i in 1..100){
+           if(i % 2 == 0){
+               continue
+           }
+           println("angka $i")
+       }
+       */
+    /*
     do{
     println("indeks ke $i")
         i--
     }while (i > -10)
-
+*/
 
 
     /*
