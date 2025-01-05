@@ -10,6 +10,12 @@ fun main(){
     println(gaming[1])
 
 
+    for(forLoopKotlin in nama){
+        println(forLoopKotlin)
+    }
+
+   
+
     tipe.set(1,720)
     println(tipe[1])
     println(mobil2)
@@ -57,7 +63,7 @@ if(nilaiku >= 75 && tugas >= 80) {
             !is String -> println("Ini Bukan String")
     }
 
-    
+
 
 
 }
