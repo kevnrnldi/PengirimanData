@@ -40,6 +40,8 @@ fun main (){
         anonymousIncrement()
         functionIncrement()
     println(counter)
-}
 
+
+
+}
 
