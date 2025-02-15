@@ -34,3 +34,4 @@ fun main() {
 
 //hanya bisa digunakan diluar local function/class
 const val APP = "application"
+val kevin = "nama"
