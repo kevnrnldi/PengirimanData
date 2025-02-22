@@ -21,19 +21,19 @@ fun main() {
     println(fulling)
 
 
-    var kedua = saya.sayHello("yuna",5)
+    var kedua = saya.sayHello(5,"yuna")
 
 
 }
 
 class kevin(var name: String = "",var mobil: String = "",var jumlahMobil : Int? = 5 ){
 
-    fun sayHello(namaDia: String){
-        println("Hallo $namaDia, saya $name")
+    fun sayHello(name: String){
+        println("Hallo $name, saya ${this.name}")
     }
 
-    fun sayHello(nama: String,mobilku: Int){
-        println("Hallo $nama, saya $name dan saya mempunyai mobil $mobilku")
+    fun sayHello(mobilku: Int,name: String){
+        println("Hallo $name, saya ${this.name} dan saya mempunyai mobil $mobilku")
     }
 
 
