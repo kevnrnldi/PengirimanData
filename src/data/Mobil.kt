@@ -21,6 +21,9 @@ fun main() {
     println(fulling)
 
 
+    var kedua = saya.sayHello("yuna",5)
+
+
 }
 
 class kevin(var name: String = "",var mobil: String = "",var jumlahMobil : Int? = 5 ){
@@ -28,6 +31,11 @@ class kevin(var name: String = "",var mobil: String = "",var jumlahMobil : Int? 
     fun sayHello(namaDia: String){
         println("Hallo $namaDia, saya $name")
     }
+
+    fun sayHello(nama: String,mobilku: Int){
+        println("Hallo $nama, saya $name dan saya mempunyai mobil $mobilku")
+    }
+
 
     fun full() : String{
         return "saya $name punya mobil $mobil dan jumlah mobil saya $jumlahMobil"
