@@ -4,16 +4,16 @@ import data.Business
 import data.Mobil
 
 fun main (){
-    val cayman = Mobil("porsche", 2024)
-    cayman.year = 2026
+//    val cayman = Mobil("porsche", 2024)
+//    cayman.year = 2026
 //
 //    val gtr = Mobil("nissan", 2021)
 
 
 
-
-    println(cayman.brand)
-    println(cayman.year)
+//
+//    println(cayman.brand)
+//    println(cayman.year)
 //    println(gtr.brandCar)
 //    println(gtr.yearCar)
 
@@ -30,10 +30,11 @@ fun main (){
 
 
 
-//    var bisnis1 = Business("AutoSport", "Otomotif")
-//    var bisnis2 = Business("Breads", "Makanan", 2025)
+   var bisnis1 = Business("AutoSport", "Otomotif")
+    var bisnis2 = Business("Breads", "Makanan", 2025)
 //
-//    println(bisnis1.namaBisnis)
+    bisnis1.tunjuk()
+    bisnis2.tunjuk()
 //    println(bisnis2.namaBisnis)
 //
 //    bisnis1.tampil()
