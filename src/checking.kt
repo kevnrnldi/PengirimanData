@@ -1,6 +1,13 @@
 fun main(){
     PanggilDenganWhen(laptop("axioo"))
 
+
+    percobaan("porsche dan bmw z4")
+    percobaan(911)
+
+
+    val check = kitaTOString("ya")
+    println(check)
 }
 
 fun Panggil(any: Any){
@@ -28,3 +35,17 @@ fun PanggilDenganWhen(any: Any){
 
 class handphone(var brand: String)
 class laptop( var brand: String)
+
+
+fun percobaan(mobil: Any){
+    val checkKonversi : String? = mobil as? String
+    println(checkKonversi)
+}
+
+
+class kitaTOString(var apakahBerhasil: String){
+    override fun toString(): String {
+        return "berhasil? $apakahBerhasil"
+    }
+}
+
