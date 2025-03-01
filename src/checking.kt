@@ -10,12 +10,15 @@ fun main(){
 //    println(check)
 
 
-    var percobaan1 = bandingkan("razer")
-    var percobaan2 = bandingkan("raZer")
 
-    println(percobaan1.equals(percobaan2))
+
+    var percobaan1 = bandingkan("razer")
+    var percobaan2 = bandingkan("razer")
+
+    println(percobaan1.hashCode().equals(percobaan2.hashCode()))
     println(percobaan1 == percobaan2)
-    println(percobaan1 == percobaan2)
+    println(percobaan1)
+    println(percobaan2)
 }
 
 fun Panggil(any: Any){
@@ -58,6 +61,11 @@ class kitaTOString(var apakahBerhasil: String){
 }
 
 class bandingkan(val perusahaan: String){
+    override fun hashCode(): Int {
+        return perusahaan.hashCode()
+    }
+
+
     override fun equals(other: Any?): Boolean {
         return when(other){
             is bandingkan -> other.perusahaan.equals( this.perusahaan, ignoreCase = true)
@@ -65,4 +73,6 @@ class bandingkan(val perusahaan: String){
         }
     }
 }
+
+
 
