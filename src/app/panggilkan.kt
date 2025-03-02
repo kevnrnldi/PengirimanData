@@ -9,4 +9,23 @@ fun main(){
 
     coba1.daerah = ""
     println(coba1.daerah)
+
+
+    var coba2 = fastfood()
+    coba2.burger = "Mcdonald"
+    coba2.fast("Burger King")
+    println(coba2.burger)
+
 }
+
+
+class fastfood{
+    lateinit var burger: String
+
+    fun fast(burger : String){
+     this.burger = burger
+
+    }
+}
+
+
