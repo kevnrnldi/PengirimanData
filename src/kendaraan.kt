@@ -14,6 +14,7 @@ fun main (){
 
 
 abstract class kendaraan(var nama: String, var roda: Int){
+    lateinit var mesinnya: String
     abstract fun mesin( mesinnya: String)
 
     fun info(){
@@ -28,6 +29,7 @@ interface bisaDikendarai {
 
 class mobil( nama: String) : kendaraan(nama, 4), bisaDikendarai{
     override fun mesin(mesinnya: String){
+        this.mesinnya = mesinnya
         println("mesin $nama : $mesinnya")
     }
 
@@ -39,6 +41,7 @@ class mobil( nama: String) : kendaraan(nama, 4), bisaDikendarai{
 
 class motor( nama: String) : kendaraan(nama, 2), bisaDikendarai{
     override fun mesin( mesinnya: String){
+        this.mesinnya = mesinnya
         println("mesin $nama : $mesinnya")
     }
 
